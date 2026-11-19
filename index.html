@@ -16,8 +16,8 @@
     <link rel="icon" type="image/png" href="icons/icon-192.png" />
     <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
     <title>空の郵便が届くまで — 水瀬 葵</title>
-    <script type="module" crossorigin src="./assets/index-C0SueWw7.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DO7TV2T3.css">
+    <script type="module" crossorigin src="./assets/index-DwVPw2Gq.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-reYdAlJq.css">
   <link rel="manifest" href="./manifest.webmanifest"></head>
   <body>
     
@@ -29,7 +29,7 @@
           
           <img src="book/cover-art.webp" alt="空の郵便が届くまで — 水瀬 葵" class="cover-img" />
           <img src="icons/logo-line-white.svg" alt="" class="cover-logo" aria-hidden="true" />
-          <span class="cover-vtitle" aria-hidden="true"><span class="vt-line">空の郵便が</span><span class="vt-line">届くまで</span></span>
+          <span class="cover-vtitle" aria-hidden="true"><span class="vt-line">空の郵便が届くまで</span></span>
           <span class="cover-author" aria-hidden="true">水瀬　葵</span>
         </span>
       </div>
@@ -63,9 +63,26 @@
     </section>
 
     
+    <section id="workView" class="view view-work" hidden>
+      <div class="work-sheet">
+        <div class="work-text">
+          <p id="workNum" class="work-num"></p>
+          <h2 id="workTitle" class="work-title"></h2>
+        </div>
+        
+        <div class="sheet-footer">
+          <button id="workPlayBtn" type="button" class="page-icon-btn" aria-label="再生"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.8v4.4c0 .3.2.5.5.5H7l4.5 3.8c.3.3.9.1.9-.3V5.7c0-.4-.6-.6-.9-.3L7 9.3H4.5c-.3 0-.5.2-.5.5z" /><path d="M15.3 9.4a3.8 3.8 0 0 1 0 5.2" /><path d="M17.8 6.9a7.2 7.2 0 0 1 0 10.2" /></svg></button>
+          <button id="workMenuBtn" type="button" class="page-icon-btn" aria-label="設定"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3.2" /><path d="M12 3.8v2.4M12 17.8v2.4M3.8 12h2.4M17.8 12h2.4M6.2 6.2l1.7 1.7M17.8 6.2l-1.7 1.7M6.2 17.8l1.7-1.7M17.8 17.8l-1.7-1.7" /></svg></button>
+        </div>
+      </div>
+    </section>
+
+    
     <section id="gateView" class="view view-gate" hidden>
       <div class="gate-sheet">
         <div class="gate-text">
+          
+          <p id="gateWork" class="gate-work"></p>
           <p id="gateNum" class="gate-num"></p>
           
           <h2 class="gate-title"><span id="gateTitle"></span><span id="gateNarrator" class="gate-narrator"></span></h2>
@@ -127,7 +144,7 @@
         <div id="endrollPage" class="endroll-page" hidden>
           <div class="endroll-inner">
             <p class="endroll-label">エンドロール</p>
-            <img class="endroll-jacket" src="book/song-jacket.jpg" alt="収録曲のジャケット" />
+            <img id="endrollJacket" class="endroll-jacket" alt="収録曲のジャケット" draggable="false" hidden />
             <div class="endroll-lyrics" id="endrollLyrics"></div>
           </div>
           
